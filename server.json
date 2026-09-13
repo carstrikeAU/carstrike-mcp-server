@@ -1,6 +1,6 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.schema.json",
-  "name": "io.github.your-github-username/carstrike-mcp-server",
+  "name": "io.github.carstrikeAU/carstrike-mcp-server",
   "version": "1.0.0",
   "description": "World's first live Japanese car auction search, SEV compliance verification, and JDM import cost calculator MCP server.",
   "transport": {
