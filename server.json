@@ -1,0 +1,43 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.schema.json",
+  "name": "io.github.your-github-username/carstrike-mcp-server",
+  "version": "1.0.0",
+  "description": "World's first live Japanese car auction search, SEV compliance verification, and JDM import cost calculator MCP server.",
+  "transport": {
+    "type": "streamable-http",
+    "url": "https://carstrike.com.au/api/mcp"
+  },
+  "auth": {
+    "type": "bearer",
+    "header": "Authorization"
+  },
+  "capabilities": {
+    "tools": true,
+    "resources": false,
+    "prompts": false
+  },
+  "tools": [
+    {
+      "name": "check_sev_eligibility",
+      "description": "Check whether a specific Japanese vehicle make and model is approved on the Australian SEVs register."
+    },
+    {
+      "name": "search_upcoming_auctions",
+      "description": "Search live upcoming Japanese auction listings across USS, HAA, and independent Tokyo/Nagoya auctions."
+    },
+    {
+      "name": "calculate_landed_cost",
+      "description": "Calculate estimated Australian landed costs in AUD from Japanese auction hammer price (JPY)."
+    },
+    {
+      "name": "check_physical_inventory",
+      "description": "Check currently available on-hand or in-transit stock in the CarStrike Brisbane inventory."
+    },
+    {
+      "name": "get_auction_benchmarks",
+      "description": "Fetch historical Japanese auction price benchmarks and typical sale ranges."
+    }
+  ],
+  "vendor": "CarStrike Australia",
+  "website": "https://carstrike.com.au"
+}
