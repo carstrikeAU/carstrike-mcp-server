@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
-      id-token: write # Required for secure GitHub OIDC authentication with the MCP Registry
+      id-token: write
 
     steps:
       - name: Checkout Repository
